@@ -9,6 +9,8 @@ Made up of 5 parts, i've put what i think will be common combinations, its all p
 this is mostly my own work, I used the template from user Exaskryz in [this thread](https://www.autohotkey.com/boards/viewtopic.php?t=25218#top) for the greek bits and the original media keys file is from some post I found ages ago, but I lost the one I modifyed originally and rewerote it <3
 
 the shortcuts are as follows, theyre arranged with what felt logical to me
+
+
 NUMPAD:
 --------------
 NL - Numlock
