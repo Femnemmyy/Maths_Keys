@@ -18,7 +18,7 @@ NL - Numlock
 - NL + "*" = )
 - NL +"-" = Backspace
 - NL + 8/up = ^
-- NL + p/pgup = "="
+- NL + 9/pgup = "="
 - NL + 5 = "sqrt("
 
 Greek:
