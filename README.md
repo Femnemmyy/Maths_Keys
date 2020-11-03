@@ -2,6 +2,8 @@
 =================
 A set of shortcuts for AHK including common mathematical symbols and numpad shortcuts to make typing maths faster to use when you cant use LaTeX or something simmilar
 
+Need AutoHotkey 1.1+ - https://autohotkey.com/download/1.1/?C=M;O=D
+
 Note:
 Made up of 5 parts, i've put what i think will be common combinations, its all pretty plug and play though, just make sure the MATLAB and Word components are at the end of the file. 
 .ahk files can be edited in notepad so you can see all of the workings there if youre interested.
