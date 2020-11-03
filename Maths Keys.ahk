@@ -12,19 +12,25 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 NumLock & NumpadPgUp:: ; equals if numlock's off
 SendLevel, 2
 Send {F18}
-SetNumLockState, On
+; setstate
 return
 
 NumLock & Numpad9:: ; equals
 SendLevel, 2
 Send {F18}
-SetNumLockState, On
+; setstate
 return
 
 NumLock & Numpad5:: ; sqrt(
 SendLevel, 2
 Send {F19}
-SetNumLockState, On
+; setstate
+return
+
+NumLock & NumpadClear:: ; sqrt(
+SendLevel, 2
+Send {F19}
+; setstate
 return
 
 Numlock & NumpadDiv:: ; open bracket
@@ -52,37 +58,40 @@ SendLevel, 2
 Send {F17}
 return
 
+Numlock & Right::Send, ans
+return
+
 ;-------------------------------------------------------
 ;                  numpad f-keys
 ;-------------------------------------------------------
 F14::
+; setstate
 Send,(
-SetNumLockState, On
 return
 
 F15::
+; setstate
 Send,)
-SetNumLockState, On
 return
 
 F16::
+; setstate
 Send, {Backspace}
-SetNumLockState, On
 return
 
 F17::
+; setstate
 Send,{^}
-SetNumLockState, On
 return
 
 F18::
 Send,{=}
-SetNumLockState, On
+; setstate
 return
 
 F19::
 Send,sqrt(
-SetNumLockState, On
+; setstate
 return
 
 ;--------------------------------------------------------------------
@@ -99,17 +108,20 @@ return
 <^>!i::Send {U+222b} ; integral
 <^>!k::Send {U+03ba} ; kappa
 <^>!m::Send {U+03bc} ; mu
-<^>!n::Send {U+03bd} ; nu
-<^>!+n::Send {U+2229} ; intersection
-<^>!o::Send {U+2205} ; empty set
+<^>!n::Send {U+03b7} ; eta
+<^>!+n::Send {U+03bd} ; nu
+<^>!0::Send {U+2205} ; empty set
 <^>!p::Send {U+03c0} ; pi
-<^>!+p::Send {U+03c6} ; phi
+<^>!o::Send {U+03c6} ; phi
+<^>!+o::Send {U+03a6} ; capital phi
 <^>!r::Send {U+03c1} ; roh
 <^>!s::Send {U+03c3} ; lower sigma
 <^>!+s::Send {U+03a3} ; upper sigma
-<^>!t::Send {U+03d1} ; lower theta
-<^>!+t::Send {U+03b8} ; upper theta
+<^>!t::Send {U+03c4} ; tau
+<^>!+t::Send {U+03b8} ; theta
 <^>!u::Send {U+222a} ; union
+<^>!+u::Send {U+2229} ; intersection
+<^>!v::Send, {U+03d1} ; small theta
 <^>!w::Send {U+03c9} ; lower omega
 <^>!+w::Send {U+03a9} ; upper omega
 <^>!y::Send {U+03b3} ; gamma
@@ -120,6 +132,7 @@ return
 <^>!+8::Send {U+00b0} ; degrees
 <^>!+5::Send {U+221e} ; infinity
 <^>!=::Send {U+2248} ; approx.
+
 
 
 ;--------------------------------------------------------------------
