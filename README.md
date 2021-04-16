@@ -6,7 +6,6 @@ Need AutoHotkey 1.1+ - https://autohotkey.com/download/1.1/?C=M;O=D
 
 Note:
 Made up of 5 parts, i've put what i think will be common combinations, its all pretty plug and play though, just make sure the MATLAB and Word components are at the end of the file. 
-.ahk files can be edited in notepad so you can see all of the workings there if youre interested.
 
 this is mostly my own work, I used the template from user Exaskryz in [this thread](https://www.autohotkey.com/boards/viewtopic.php?t=25218#top) for the greek bits and the original media keys file is from some post I found ages ago, but I lost the one I modified originally and rewerote it <3
 
@@ -33,7 +32,7 @@ Matlab:
 -------
 Originally the MATLAB and Numpad sections were the same, but having ans and clc pop up whenever is a bit dumb, and the numpad combinations are really useful outside of just matlab, so the annoying ones are here! 
 NL + right = "ans"
-Ctrl Shift + c = clear ( also selects all and deletes so this can be used halfway through a line
+Ctrl Shift + c = clear (clc command) (also selects all and deletes so this can be used halfway through a line)
 Ctrl Shift + up arrow = "ans"
 
 Word:
@@ -41,7 +40,7 @@ Word:
 I was doing an assignment that used lots of superscripts and subscripts, and I didn't like the built in shortcuts. Also the builtin word shortcut editor is not that great so i made this.
 ctrl alt + up arrow = superscript
 ctrl shift alt + down = subscript (different so it doesn't interrupt media keys)
-this can only execute the builtin shortcut really fast so makesure its set to ctrl shift + and ctrl shift = for the default
+this can only execute the builtin shortcut really fast so makesure its set to ctrl shift + and ctrl shift - for the default
 
 Media Keys:
 ------
